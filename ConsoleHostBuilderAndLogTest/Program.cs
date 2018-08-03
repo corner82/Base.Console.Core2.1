@@ -90,7 +90,7 @@ namespace ConsoleHostBuilderAndLogTest
 
                     if (args != null)
                     {
-                        configApp.AddCommandLine(args);
+                        configApp.AddCommandLine(args);   
                     }
                 })
                 .ConfigureServices((hostContext, services) =>
