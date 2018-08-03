@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleHostBuilderAndLogTest": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\M. Zeynel Dağlı\\Documents\\Visual Studio 2017\\Projects\\ConsoleHostBuilderAndLogTest\\ConsoleHostBuilderAndLogTest"
+    }
+  }
+}
