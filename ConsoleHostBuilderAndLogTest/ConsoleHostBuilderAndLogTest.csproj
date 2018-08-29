@@ -30,4 +30,8 @@
     <Folder Include="Logs\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Base.Core\Base.Core.csproj" />
+  </ItemGroup>
+
 </Project>

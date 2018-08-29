@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
+using ConsoleHostBuilderAndLogTest.Services;
 
 namespace ConsoleHostBuilderAndLogTest
 {
@@ -96,13 +97,13 @@ namespace ConsoleHostBuilderAndLogTest
                 .ConfigureServices((hostContext, services) =>
                 {
                     //services.AddOptions();
-                    //services.Configure<ConfigRabbitMQ>(configHost.Configuration.GetSection("RabbitMQLog"));
-                    //services.Configure<ConfigRabbitMQ>(hostContext.Configuration.GetSection("RabbitMQLog"));
                     services.Configure<ConfigRabbitMQ>(hostContext.Configuration.GetSection("RabbitMQLog"));
                     services.AddLogging();
                     //services.AddHostedService<LifetimeEventsHostedService>();
                     services.AddHostedService<TimedHostedService>();
                     services.AddHostedService<RabbitMQSubscriberService>();
+                    //services.AddHostedService<RabbitMQPageActivitySubscriberService>();
+                    //services.AddScoped<IScopedProcessingService, ScopedProcessingService>();
 
                     //Identity dccontext ayarları(postgreSQL için ayarlanıyor veya sql server için )
                     services.AddDbContext<PageAccessLogContext>(options =>

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace ConsoleHostBuilderAndLogTest
+namespace ConsoleHostBuilderAndLogTest.Services
 {
     #region snippet1
     internal class LifetimeEventsHostedService : IHostedService
